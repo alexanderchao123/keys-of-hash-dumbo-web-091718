@@ -5,7 +5,9 @@ class Hash
     keys = []
     # binding.pry
     self.each do |key, value|
-      keys.push(key) if (value == arg1 || value == arg2)
+      if (value == arg1 || value == arg2)
+        keys.push(key)
+      end
     end
     return keys
   end
