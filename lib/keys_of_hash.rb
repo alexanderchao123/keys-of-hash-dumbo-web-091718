@@ -1,8 +1,9 @@
 require 'pry'
 
 class Hash
-  def keys_of(arg1, *arg2)
-    binding.pry
+  def keys_of(arguements)
+    keys = []
+    self.each {|key, value| keys.push(key) if }
   end
 end
 
