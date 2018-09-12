@@ -1,10 +1,10 @@
 require 'pry'
 
 class Hash
-  def keys_of(*arguements)
+  def keys_of(*arguments)
     keys = []
     # binding.pry
-    self.each {|key, value| keys.push(key) if value == arguements}
+    self.each {|key, value| keys.push(key) if value == arguments}
   end
   return keys
 end
