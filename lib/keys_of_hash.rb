@@ -3,8 +3,8 @@ require 'pry'
 class Hash
   def keys_of(arg1, *arg2)
     keys = []
-    # binding.pry
     self.each do |key, value|
+      # binding.pry
       if (value == arg1 || value == arg2)
         keys.push(key)
       end
