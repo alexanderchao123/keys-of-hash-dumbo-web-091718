@@ -1,7 +1,7 @@
 require 'pry'
 
 class Hash
-  def keys_of(arguements)
+  def keys_of(*arguements)
     keys = []
     self.each {|key, value| keys.push(key) if }
   end
