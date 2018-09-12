@@ -8,5 +8,5 @@ class Hash
   end
 end
 
-# animals = {"sugar glider"=>"Australia","aye-aye"=> "Madagascar"}
-# animals.keys_of("hello")
+animals = {"sugar glider"=>"Australia","aye-aye"=> "Madagascar"}
+animals.keys_of("hello")
