@@ -2,7 +2,7 @@ require 'pry'
 
 class Hash
   def keys_of(arguments)
-    arr = []
+    arr = Array.new()
     # binding.pry
     self.each {|key, value| arr.push(key) if value == arguments}
   end
