@@ -2,10 +2,10 @@ require 'pry'
 
 class Hash
   def keys_of(*arguments)
-    arr = Array.new()
+    keys = []
     # binding.pry
-    self.each {|key, value| arr.push(key) if value == arguments}
-    return arr
+    self.each {|key, value| keys.push(key) if value == arguments}
+    return keys
   end
 end
 
