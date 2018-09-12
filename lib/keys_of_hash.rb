@@ -2,11 +2,11 @@ require 'pry'
 
 class Hash
   def keys_of(*arguments)
-    keys = []
+    arr = []
     # binding.pry
-    self.each {|key, value| keys.push(key) if value == arguments}
+    self.each {|key, value| arr.push(key) if value == arguments}
   end
-  return keys
+  return arr
 end
 
 # animals = {"sugar glider"=>"Australia","aye-aye"=> "Madagascar"}
